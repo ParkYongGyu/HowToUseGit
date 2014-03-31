@@ -1,4 +1,4 @@
- In the case of pulling ( testing ) a committed source file, the previous change is to be ignored and overwritten.
+ In the case of pulling ( testing ) (testing ) a committed source file, the previous change is to be ignored and overwritten.
  
  
  		$this->db
