@@ -11,19 +11,19 @@
   			}
   
   
- -			if(6666 == $event_history_point->point_type){
+ -			if(1111 == $event_history_point->point_type){
   				$result[$counter]['type'] = $event_history_point->part_order ."?". $event_history_point->section_order ."?". $event_history_point->chapter_order ."????";
   			}
- -			elseif(7777 == $event_history_point->point_type){
+ -			elseif(2222 == $event_history_point->point_type){
   				$result[$counter]['type'] = "??????";
   			}
- -			elseif(8888 == $event_history_point->point_type){
+ -			elseif(3333 == $event_history_point->point_type){
   				$result[$counter]['type'] = "?????????(??)";
   			}
- -			elseif(1111 == $event_history_point->point_type){
+ -			elseif(4444 == $event_history_point->point_type){
   				$result[$counter]['type'] = "?????????(MVP)";
   			}
- -			elseif(2222 == $event_history_point->point_type){
+ -			elseif(5555 == $event_history_point->point_type){
  -				$result[$counter]['type'] = "?????????(JOIN)";
  -			}
   
