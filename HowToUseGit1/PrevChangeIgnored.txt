@@ -11,19 +11,19 @@
   			}
   
   
- -			if(Config_event_quest::REWARD_POINT_TYPE_QUEST == $event_history_point->point_type){
+ -			if(1111 == $event_history_point->point_type){
   				$result[$counter]['type'] = $event_history_point->part_order ."?". $event_history_point->section_order ."?". $event_history_point->chapter_order ."????";
   			}
- -			elseif(Config_event_quest::REWARD_POINT_TYPE_QUESTBOSS == $event_history_point->point_type){
+ -			elseif(2222 == $event_history_point->point_type){
   				$result[$counter]['type'] = "??????";
   			}
- -			elseif(Config_event_quest::REWARD_POINT_TYPE_RAIDBOSS_DISCOVER == $event_history_point->point_type){
+ -			elseif(3333 == $event_history_point->point_type){
   				$result[$counter]['type'] = "?????????(??)";
   			}
- -			elseif(Config_event_quest::REWARD_POINT_TYPE_RAIDBOSS_MVP == $event_history_point->point_type){
+ -			elseif(4444 == $event_history_point->point_type){
   				$result[$counter]['type'] = "?????????(MVP)";
   			}
- -			elseif(Config_event_quest::REWARD_POINT_TYPE_RAIDBOSS_SUPPORT == $event_history_point->point_type){
+ -			elseif(5555 == $event_history_point->point_type){
  -				$result[$counter]['type'] = "?????????(JOIN)";
  -			}
   
@@ -32,7 +32,7 @@
   			AND ed.idx NOT IN (SELECT `e_detail_idx` FROM `event_quest_raidboss_appear_history` WHERE usn = ? )
   			ORDER BY ed.condition ASC
   			LIMIT 1';
- -		$query = $this->db->query($sql,array($e_idx,Config_common::EVENT_DETAIL_TYPE_RAIDBOSS_APPEAR,$usn));
+ -		$query = $this->db->query($sql,array($e_idx,9999,$usn));
   		
   		return $query->row();
   	}
