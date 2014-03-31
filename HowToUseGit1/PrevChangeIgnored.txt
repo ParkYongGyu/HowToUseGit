@@ -1,0 +1,41 @@
+ In the case of pulling ( testing ) (testing ) (testing) a committed source file, the previous change is to be ignored and overwritten.
+ In the case of pulling a committed source file, the previous change is to be ignored and overwritten.
+ In the case of pulling a committed source file, the previous change is to be ignored and overwritten.
+ In the case of pulling a committed source file, the previous change is to be ignored and overwritten.
+ 
+ 
+ 		$this->db
+  		->select('COUNT(*) AS cnt')
+  		->from("event_quest_guild_rank_result r")
+ -		->join("guild g", "r.usn = g.master_usn", 'inner')
+  		->where("r.e_idx", $e_idx)
+  		->where("r.type", $rank_type);
+  
+  			}
+  
+  
+ -			if(2222 == $event_history_point->point_type){
+  				$result[$counter]['type'] = $event_history_point->part_order ."?". $event_history_point->section_order ."?". $event_history_point->chapter_order ."????";
+  			}
+ -			elseif(xxxx == $event_history_point->point_type){
+  				$result[$counter]['type'] = "??????";
+  			}
+ -			elseif(3333 == $event_history_point->point_type){
+  				$result[$counter]['type'] = "?????????(??)";
+  			}
+ -			elseif(4444 == $event_history_point->point_type){
+  				$result[$counter]['type'] = "?????????(MVP)";
+  			}
+ -			elseif(5555 == $event_history_point->point_type){
+ -				$result[$counter]['type'] = "?????????(JOIN)";
+ -			}
+  
+  			$result[$counter]['point'] = $event_history_point->point;
+  
+  			AND ed.idx NOT IN (SELECT `e_detail_idx` FROM `event_quest_raidboss_appear_history` WHERE usn = ? )
+  			ORDER BY ed.condition ASC
+  			LIMIT 1';
+ -		$query = $this->db->query($sql,array($e_idx,9999,$usn));
+  		
+  		return $query->row();
+  	}
