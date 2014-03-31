@@ -11,10 +11,10 @@
   			}
   
   
- -			if(1111 == $event_history_point->point_type){
+ -			if(2222 == $event_history_point->point_type){
   				$result[$counter]['type'] = $event_history_point->part_order ."?". $event_history_point->section_order ."?". $event_history_point->chapter_order ."????";
   			}
- -			elseif(2222 == $event_history_point->point_type){
+ -			elseif(xxxx == $event_history_point->point_type){
   				$result[$counter]['type'] = "??????";
   			}
  -			elseif(3333 == $event_history_point->point_type){
