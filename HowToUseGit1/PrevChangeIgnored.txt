@@ -1,4 +1,4 @@
- In the case of pulling (testing1) (testing2) a committed source file, the previous change is to be ignored and overwritten.
+ In the case of pulling (testing1) (testing2)   a committed source file, the previous change is to be ignored and overwritten.
 
  
  		$this->db
@@ -11,7 +11,7 @@
   			}
   
   
- -			if(2222 == $event_history_point->point_type){
+ -			if(3333 == $event_history_point->point_type){
   				$result[$counter]['type'] = $event_history_point->part_order ."?". $event_history_point->section_order ."?". $event_history_point->chapter_order ."????";
   			}
  -			elseif(xxxx == $event_history_point->point_type){
